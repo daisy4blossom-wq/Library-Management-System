@@ -16,7 +16,7 @@ import requests
 MAX_BORROWED = 5
 LOAN_DAYS = 14
 DUE_SOON = 2
-connection = psycopg2.connect(dbname="library", user="postgres", password="chinenye_onyeka@2009", host="localhost", port=5432)
+connection = psycopg2.connect(dbname="library", user="postgres", host="localhost", port=5432)
 
 class LibraryFrame(wx.Frame):
     def __init__(self, user_id):
